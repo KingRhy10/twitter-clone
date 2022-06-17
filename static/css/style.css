@@ -1,0 +1,196 @@
+/*
+Common
+****************************/
+
+html,
+body {
+  height: 100%;
+  background-color: gold;
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+/*
+Post
+****************************/
+
+.post_form {
+  padding: 20px 40px;
+  border: 1px solid black;
+}
+
+.post_form input {
+  width: 86%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255);
+  font: bold;
+  font-family: cursive;
+  border-radius: 11px;
+  background-color: darkblue;
+  color: white;
+}
+
+
+.post_form textarea {
+  /* flex: 1; */
+  /* margin-left: 20px; */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-family: fantasy;
+  border-radius: 12px;
+  height: 20vh;
+  width: 87%;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+}
+img.post-edit-img {
+  width: 74% !important;
+  border-radius: 15px;
+  height: 50vh !important;
+}
+a.edit-cancel-btn {
+  color: white;
+  background-color: royalblue;
+  padding: 10.5px 14px;
+  border-radius: 7px;
+  font-family: cursive;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.main-header h1{
+  font-family: 'Fascinate Inline', cursive
+}
+
+.post_form button {
+  background-color: royalblue;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 8px;
+  width: 78px;
+  height: 45px
+}
+
+.post_form img {
+  height: 50px;
+}
+
+img.logo{
+  width:70px;
+  height: 50px;
+}
+
+.posts ul {
+  padding: 0;
+  border: 1px solid black;
+}
+
+.posts li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+  list-style: none;
+  width:100% !important;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 115px;
+  top: 18px;
+  color: blue;
+   
+}
+.name_body a img.like-img {
+  width: 77px;
+  position: absolute;
+  bottom: 42px;
+  left: 31px;
+}
+form.form{
+  display: flex;
+}
+.form-input {
+  margin-left: 20px;
+}
+
+.name_body a {
+  position: absolute;
+  bottom: 25px;
+  left: 41px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 96px;
+  border: 1px solid royalblue;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+} 
+
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li logo {
+  flex-basis: 15%;
+}
+
+.posts li .logo img {
+  width: 100%;
+}
+.posts li .name_body {
+  /* flex-basis: 20%; */
+  font-family: 'Permanent Marker', cursive;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
+}
+.logo {
+  width: 20%;
+  margin-right: 40px;
+}
+.name_body img {
+  width: 74%;
+  border-radius: 15px;
+}
+
+
+.posts li .name_body .datetime {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+    .post li .name_body .name {
+        font-size: 20px;
+        color: white;
+    }
+}

@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<section class="content">
+  <div class="main-header">
+    <img src="/static/img/logo-twitterblue.svg" class="logo">
+    <h1>Home</h1>
+</div>
+  <section class="post_form">
+    <div class="container">
+      <div class="main">
+
+          </div>
+          <form class="form" action="/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <img src="{% static 'img/gamepad.png' %}" />
+            <div class="form-input">
+            <input type="text" name="name" placeholder="Name" value="{{posts.name}}" required>
+            <textarea name="body" placeholder="What's Happening"  required>{{posts.body}}</textarea>
+            <img class="post-edit-img" src="{{posts.image.url}}" alt="">
+            <input type="file" name="image">
+            <div class="bottom-area">
+      
+      
+              <button class="btn" type="submit">Tweet</button>
+             <a class="edit-cancel-btn" href="/">Cancel</a>
+          </div>
+        </div>
+          </form>
+
+
+  </section>
+  {% endblock %}
