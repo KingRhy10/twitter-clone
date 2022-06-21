@@ -104,12 +104,12 @@ img.logo{
 }
 
 .posts li {
-  position: relative;
-  display: flex;
-  border-bottom: 1px solid #ccc;
-  padding: 20px 40px;
-  list-style: none;
-  width:100% !important;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 20px 0px 20px 40px;
+    list-style: none;
+    width: 93.5% !important;
 }
 
 .posts li .menu_icon {
