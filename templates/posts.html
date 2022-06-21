@@ -37,7 +37,7 @@
       <li>
         <img class="menu_icon js-menu-icon" src="static/img/option.png" />
         <div class="menu">
-          <a href="/delete/{{ post.id }}/">delete</a>
+          <a href="/delete/{{ post.id }}/">Delete</a>
           <a href="/edit/{{ post.id }}/">Edit</a>
         </div>
         <div class="logo">
@@ -48,7 +48,12 @@
           <div class="datetime">{{ post.created_at }}</div>
           <p>{{ post.body }}</p>
           <img src="{{post.image.url}}" alt="">
-          <a href="/like/{{ post.id}}/"><img class="like-img" src="{% static 'img/like.png' %}" alt="">{{post.like}}</a>
+          
+          <a href="/like/{{ post.id}}/"><img class="like-img" src="{% static 'img/like.png' %}" alt="">
+            {% if post.like != 0 %}
+            <span>{{post.like}}</span>
+            {% endif %}
+          </a>
         </div>   
       </li> 
        {% endfor %}

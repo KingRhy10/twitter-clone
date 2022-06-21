@@ -15,7 +15,9 @@
             <div class="form-input">
             <input type="text" name="name" placeholder="Name" value="{{posts.name}}" required>
             <textarea name="body" placeholder="What's Happening"  required>{{posts.body}}</textarea>
+            {% if posts.image.url %}
             <img class="post-edit-img" src="{{posts.image.url}}" alt="">
+            {% endif %}
             <input type="file" name="image">
             <div class="bottom-area">
       

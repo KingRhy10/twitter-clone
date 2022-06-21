@@ -84,7 +84,9 @@ a.edit-cancel-btn {
   font-weight: 900;
   border-radius: 8px;
   width: 78px;
-  height: 45px
+  height: 45px;
+  font-family: cursive;
+  
 }
 
 .post_form img {
